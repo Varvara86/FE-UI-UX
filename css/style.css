@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    background-position: top;
+    background-image: url(../Images/Landing.jpg);
+    width: 100%;
+    min-height: 7268px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Myriad Pro';
+    display: block;
+}
+.wrapper__home {
+    display: flex;
+    background-position: top;
+    /* background-image: url(../Images/1\ screen.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.container {
+    width: 1173px;
+    margin: 0 auto;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    padding-top: 25px;
+}
+.logo__txt {
+    font-family: 'Audiowide';
+    font-size: 48px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.merc {
+    color: #db9f37;
+}
+.call_back {
+    display: flex;
+    align-items: flex-start;
+}
+.call_back__phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    width: 52px;
+    height: 52px;
+    color: #db9f37;
+}
+.call_back__contacts {
+    display: flex;
+    box-sizing: border-box;
+}
+.call_back__contacts--nomber {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38px;
+    color: white;
+}
+.call_back__call_me {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 38px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
