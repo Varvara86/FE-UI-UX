@@ -16,7 +16,7 @@
 
 <body>
     <div class="wrapper">
-        <div class="wrapper__home">
+        <div class="home">
             <div class="container">
                 <div class="header">
                     <div class="logo">
@@ -25,22 +25,30 @@
                     <div class="call_back">
                         <img src="./Images/phone.png" alt="" class="call_back__phone">
                         <div class="call_back__contacts">
-                            <a href="tel:8 800 555 44 33" class="call_back__contacts--nomber">8 800 555 44 33</a>
-                            <a href="javascript:void(0)" class="call_back__call_me">перезвоните мне</a>
+                            <p class="call_back__p"><a href="tel:8 800 555 44 33" class="call_back__contacts--nomber">8
+                                    800 555 44 33</a></p>
+                            <p class="call_back__txt"><a href="javascript:void(0)" class="call_back__call_me">перезвоните
+                                    мне</a></p>
+                            <!-- <p class="call_back__txt"><a href="#name" class="call_back__call_me">перезвоните -->
+                                    <!-- мне</a></p> чтобы звонок переходил в форму для заполнения -->
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="main">
-                        <h1>мощные. уникальные. тихие</h1>
-                        <hr class="main__hr">
-                        <p>Создаем индивидуальные мощные компьютеры для геймеров. Компьютеры<br>
-                            для дома, офиса, монтажные и графические станции./p>
-                            <div class="form">
-                                <input type="text" name="#" id="name" class="form__name" required placeholder="Имя">
-                                <input type="tel" name="#" id="tel" class="form__tel" required placeholder="Телефон">
-                                <input type="button" class="form__button" value="хочу">
-                            </div>
+                <div class="main">
+                    <h1 class="main__h1">мощные. уникальные. тихие</h1>
+                    <hr class="main__hr">
+                    <p class="main__p">Создаем индивидуальные мощные компьютеры для геймеров. Компьютеры<br>
+                        для дома, офиса, монтажные и графические станции.</p>
+                    <div class="row row__form">
+                        <div class="col col-4 offset-1">
+                            <input type="text" name="#" id="name" class="form__name" required placeholder="Имя">
+                        </div>
+                        <div class="col col-4">
+                            <input type="tel" name="#" id="tel" class="form__tel" required placeholder="Телефон">
+                        </div>
+                        <div class="col col-2">
+                            <input type="button" class="form__button" value="хочу">
+                        </div>
                     </div>
                 </div>
             </div>
