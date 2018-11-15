@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 .wrapper {
     background-position: top;
     background-image: url(../Images/Landing.jpg);
@@ -11,6 +12,7 @@
     font-family: 'Myriad Pro';
     display: block;
 }
+
 .home {
     display: flex;
     background-position: top;
@@ -20,18 +22,22 @@
     width: 100%;
     min-height: 966px;
 }
+
 .container {
     width: 1173px;
     margin: 0 auto;
     padding: 0;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
 }
+
 .logo {
     padding-top: 25px;
 }
+
 .logo__txt {
     font-family: 'Audiowide';
     font-size: 48px;
@@ -40,13 +46,19 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+
 .merc {
     color: #db9f37;
+    text-transform: uppercase;
+}
+.white {
+    color: white;
 }
 .call_back {
     display: flex;
     align-items: flex-start;
 }
+
 .call_back__phone {
     display: flex;
     align-items: center;
@@ -59,14 +71,17 @@
     margin-top: 26px;
     margin-right: 20px;
 }
+
 .call_back__contacts {
     display: block;
     box-sizing: border-box;
     text-align: center;
 }
+
 .call_back__p {
     margin-top: 21px;
 }
+
 .call_back__contacts--nomber {
     font-size: 30px;
     font-weight: 700;
@@ -74,9 +89,11 @@
     color: white;
     letter-spacing: -0.03em;
 }
+
 .call_back__txt {
     margin-top: -22px;
 }
+
 .call_back__call_me {
     font-size: 18px;
     font-weight: 600;
@@ -86,11 +103,13 @@
     text-transform: uppercase;
     letter-spacing: -0.03em;
 }
+
 .main {
     text-align: center;
     padding-top: 220px;
 }
-.main__h1 {
+
+h1 {
     color: #db9f37;
     font-size: 72px;
     font-weight: 700;
@@ -98,12 +117,14 @@
     text-transform: uppercase;
     letter-spacing: -0.05em;
 }
+
 .main__hr {
     width: 164px;
     height: 5px;
     background-color: #db9f37;
     border: none;
 }
+
 .main__p {
     padding-top: 5px;
     color: white;
@@ -111,10 +132,9 @@
     font-weight: 400;
     line-height: 38px;
     letter-spacing: -0.04em;
+    padding-bottom: 16px;
 }
-.row__form {
-    padding-top: 16px;
-}
+
 .form__name {
     padding: 8px 0;
     padding-left: 14px;
@@ -128,6 +148,7 @@
     color: black;
     outline: none;
 }
+
 .form__tel {
     padding: 8px 0;
     padding-left: 14px;
@@ -141,6 +162,7 @@
     color: black;
     outline: none;
 }
+
 .form__button {
     padding: 10px;
     width: 100%;
@@ -153,4 +175,260 @@
     line-height: 39px;
     text-transform: uppercase;
     outline: none;
+    cursor: pointer;
+}
+
+
+.series {
+    display: flex;
+    background-position: top;
+    background-color: #111111;
+    background-size: cover;
+    width: 100%;
+    min-height: 848px;
+    text-align: center;
+}
+
+.series__h1 {
+    padding-top: 59px;
+    margin-bottom: 32px;
+}
+
+.series__span {
+    font-size: 72px;
+}
+
+h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+}
+
+.discription {
+    text-align: left;
+    padding-left: 100px;
+}
+
+.discription__img {
+    width: 290px;
+    margin-bottom: -27px;
+}
+
+.discription__class {
+    font-family: 'Audiowide';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    color: white;
+    margin-bottom: -10px;
+}
+
+.discription__type {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    color: white;
+    margin-bottom: -23px;
+    letter-spacing: -0.04em;
+}
+
+.discription__price {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    color: white;
+    padding-top: 9px;
+    letter-spacing: -0.04em;
+}
+
+.merc__price {
+    color: #db9f37;
+}
+
+.discription__btn {
+    width: 183px;
+    padding: 7px;
+}
+
+
+
+.accessories {
+    display: flex;
+    background-position: top;
+    background-image: url(../Images/Best\ complect.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 718px;
+}
+
+.accessories__img {
+    position: absolute;
+    width: 596px;
+    padding-top: 52px;
+    padding-left: 71px;
+}
+
+.txt__h1 {
+    line-height: 86px;
+    padding-top: 34px;
+    margin-bottom: -11px;
+}
+
+.txt__p {
+    font-size: 24px;
+    line-height: 38px;
+    color: white;
+    font-weight: 400;
+}
+
+.txt__span {
+    color: #db9f37;
+    font-weight: 700;
+}
+
+.accessories__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+}
+
+
+
+.functions {
+    display: flex;
+    background-position: top;
+    background-image: url(../Images/Functional&style.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 525px;
+}
+
+.functions__img {
+    position: absolute;
+    width: 454px;
+    padding-top: 89px;
+    padding-left: 918px;
+}
+
+.functions__p {
+    width: 562px;
+    margin-top: 20px;
+    letter-spacing: -0.043em;
+    line-height: 36px;
+}
+
+
+
+.why_we {
+    display: flex;
+    background-position: top;
+    background-image: url(../Images/Why\ we.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 460px;
+    text-align: center;
+}
+.why_we__h1 {
+    padding-top: 65px;
+    margin-bottom: 36px;
+}
+.why_we__progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+}
+.progress_comp {
+    display: flex;
+    align-items: center;
+}
+.progress_comp__count {
+    color: #db9f37;
+    font-family: 'Audiowide';
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 29px;
+}
+.progress_comp__txt {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 5px;
+}
+.progress__btn {
+    padding: 15px;
+    font-family: "Myriad Pro";
+}
+
+
+
+.gallery {
+    display: block;
+    background-position: top;
+    background-image: url(../Images/Gallery.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 1240px;
+    text-align: center;
+}
+.gallery__h1 {
+    padding-top: 61px;
+    margin-bottom: 36px;
+}
+.slider {
+    display: inline;
+    width: 1047px;
+}
+
+
+
+.clients {
+    display: block;
+    background-position: top;
+    background-image: url(../Images/Our\ clients.jpg);
+    background-size: cover;
+    width: 100%;
+    max-height: 843px;
+    text-align: center;
+}
+.clients__h1 {
+    padding-top: 22px;
+    margin-bottom: 36px;
+}
+.row__clients {
+    text-align: left;
+    padding-top: 53px;
+}
+.clients__img {
+    width: 417px;
+}
+.clients__h2 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding-top: 7px;
+}
+.clients__hr {
+    width: 103px;
+    height: 5px;
+    background-color: #db9f37;
+    border: none;
+    margin-left: 6px;
+    margin-top: -10px;
+}
+.clients__p {
+    color: #bdbdbd;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: -0.035em;
 }
