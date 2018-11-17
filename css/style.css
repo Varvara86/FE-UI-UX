@@ -74,6 +74,13 @@
     margin-top: 26px;
     margin-right: 20px;
 }
+.call_back__phone:hover {
+    opacity: 0.7;
+}
+
+.call_back__phone:active {
+    opacity: 1;
+}
 
 .call_back__contacts {
     display: block;
@@ -103,6 +110,27 @@
 .call_back__txt:hover::after {
     opacity: 1;
     transform: translateY(0);
+}
+.poup{
+    width: 600px;
+    height: 400px;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 180px;
+    padding: 20px;
+    cursor: pointer;
+}
+.close {
+    text-align: right;
+}
+.poop__tel {
+    margin-bottom: 25px;
+    opacity: 1;
+}
+.tel__form {
+    margin-top: 25px;
 }
 .call_back__call_me {
     font-size: 18px;
@@ -214,7 +242,6 @@ h1 {
 .form__button:active {
     background-color: #f0ae3d;
     color: #bdbdbd;
-    text-decoration: underline;
 }
 
 

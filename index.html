@@ -14,11 +14,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="http://yandex.st/jquery/1.9.1/jquery.js"></script>
+    <script src="./js/script.js"></script>
     <title>MERC PC</title>
 </head>
 
 <body>
     <div class="wrapper">
+        <!-- Home -->
         <div class="home">
             <div class="container">
                 <div class="header">
@@ -26,17 +29,23 @@
                         <a href="javascript:void(0)" class="logo__txt"><span class="merc">merc </span>pc</a>
                     </div>
                     <div class="call_back">
-                        <img src="./Images/phone.png" alt="" class="call_back__phone">
+                        <a href="tel:8 800 555 44 33"><img src="./Images/phone.png" alt="" class="call_back__phone"></a>
                         <div class="call_back__contacts">
                             <p class="call_back__p"><a href="tel:8 800 555 44 33" class="call_back__contacts--nomber">8
                                     800 555 44 33</a></p>
-                            <p class="call_back__txt"><a href="javascript:void(0)" class="call_back__call_me">перезвоните
-                                    мне</a></p>
+                            <div class="call_back__txt openwnd"><a href="javascript:void(0)" class="call_back__call_me">перезвоните
+                                    мне</a></div>
                             <!-- <p class="call_back__txt"><a href="#name" class="call_back__call_me">перезвоните -->
                             <!-- мне</a></p> чтобы звонок переходил в форму для заполнения -->
                         </div>
                     </div>
                 </div>
+                <div class="poup" style="display:none;">
+                        <div class="close"><i class="far fa-times-circle fa-2x"></i></div><br /><br /><br />
+                        <input type="text" name="#" id="name" class="form__name" required placeholder="Имя">
+                        <p><span class="tel__form">Телефон в формате 8 0ХХ ХХХ ХХ ХХ</span><input type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}" class="form__tel poop__tel" required placeholder="Телефон"></p>
+                        <div class="submit"><input class="form__button" type="submit" value="Отправить"></div>
+                    </div>
                 <div class="main">
                     <h1>мощные. уникальные. тихие</h1>
                     <hr class="main__hr">
@@ -56,6 +65,7 @@
                 </div>
             </div>
         </div>
+        <!-- Series -->
         <div class="series">
             <div class="container">
                 <h1 class="series__h1"><span class="white">Серии компьютеров </span><span class="logo__txt series__span"><span
@@ -102,6 +112,7 @@
                 </div>
             </div>
         </div>
+        <!-- Accessories -->
         <div class="accessories">
             <div class="container">
                 <div class="row">
@@ -123,6 +134,7 @@
                 </div>
             </div>
         </div>
+        <!-- Functions -->
         <div class="functions">
             <div class="container">
                 <div class="row">
@@ -142,6 +154,7 @@
                 </div>
             </div>
         </div>
+        <!-- Why we -->
         <div class="why_we">
             <div class="container">
                 <h1 class="why_we__h1">почему мы</h1>
@@ -174,6 +187,7 @@
                 </div>
             </div>
         </div>
+        <!-- Gallery -->
         <div class="gallery">
             <div class="container">
                 <h1 class="gallery__h1">галерея</h1>
@@ -184,6 +198,7 @@
                 </div>
             </div>
         </div>
+        <!-- Clients -->
         <div class="clients">
             <div class="container">
                 <h1 class="clients__h1">наши клиенты</h1>
@@ -201,15 +216,16 @@
                 </div>
             </div>
         </div>
+        <!-- Map -->
         <div class="map">
             <div class="container">
                 <h1 class="map__h1">мы на карте</h1>
                 <h3>мощные пк для геймеров и киберспортсменов</h3>
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10893.808128960638!2d31.994796349999994!3d46.95280795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1542304664229" frameborder="0" style="border:0; width: 100%; height: 450px;" allowfullscreen></iframe> -->
                 <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.464274326725!2d31.981749190199487!3d46.96787774555938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5c96f4905dce1%3A0x5ba7f55c090ee184!2z0YPQuy4g0KTQsNC70LXQtdCy0YHQutCw0Y8sINCd0LjQutC-0LvQsNC10LIsINCd0LjQutC-0LvQsNC10LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNTQwMDA!5e0!3m2!1sru!2sua!4v1542378128148"
                     width="100%" height="463" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
+        <!-- Contacts -->
         <div class="contacts">
             <div class="container">
                 <h1 class="contacts__h1">свяжитесь с нами</h1>
@@ -267,6 +283,7 @@
                 </div>
             </div>
         </div>
+        <!-- Footer -->
         <div class="footer">
             <div class="container">
                 <p class="footer__p">

@@ -1,0 +1,65 @@
+<!doctype html>
+<head>
+<script src="http://yandex.st/jquery/1.9.1/jquery.js"></script>
+<script>
+$(document).ready(function(){
+    $('.openwnd').click(function(){
+        $('.poup').fadeIn();
+    });
+    $('.poup .close').click(function(){
+        $('.poup').fadeOut();
+    });
+    $('.poup .submit').click(function(){
+        alert("Нажата кнопка ''Действие ")
+    });
+});
+</script>
+<style>
+.poup{
+width:200px;
+height:200px;
+border:1px solid black;
+margin:0 auto;
+margin-top:250px;
+}
+</style>
+</head>
+<body>
+ 
+<span class="openwnd">Open</span>
+<div class="poup" style="display:none;">
+    <div class="close" >Закрыть</div><br/><br/><br/>
+    <div class="submit">Действие</div>
+</div>
+
+
+<form>
+        <p>Ваше имя: <input name="login"></p>
+        <p>Телефон в формате 2xxx-xxx:  <input type="tel" name="tel" 
+        pattern="2[0-9]{3}-[0-9]{3}"></p>
+        <p><input type="submit" value="Отправить"></p>
+       </form>
+
+<script>
+   var show;
+function look (type) {
+    var a = true;
+    var b = false;
+ 
+    param = document.getElementById(type);
+ 
+    if(param.style.display == "none") {
+ 
+        if(show) show.style.display = "none";
+ 
+        param.style.display = "block";
+        show = param;
+    } else {
+        param.style.display = "none";
+    }
+}
+</script>
+<a onclick="look('catalog'); return false;" href="#">Каталог товаров</a>
+<div style="display:none;padding-top:10px;" id="catalog">fasl</div>
+</body>
+</html>
