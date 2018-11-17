@@ -17,10 +17,11 @@
     display: flex;
     background-position: top;
     background-image: url(../Images/1\ screen.jpg);
-    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    min-height: 966px;
+    min-height: 968px;
 }
 
 .container {
@@ -90,15 +91,19 @@
     line-height: 38px;
     color: white;
     letter-spacing: -0.03em;
+    text-decoration: none;
 }
 
 .call_back__txt {
     margin-top: -22px;
 }
 .call_back__txt:hover {
-    text-decoration: underline;
+    color: #f0ae3d;
 }
-
+.call_back__txt:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
 .call_back__call_me {
     font-size: 18px;
     font-weight: 600;
@@ -107,6 +112,22 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: -0.03em;
+    transition:  0.3s linear;
+}
+.call_back__call_me::after {
+    display: block;
+    content: '';
+    width: 80%;
+    height: 2px;
+    background-color: #f0ae3d;
+    margin: 0 auto;
+    transform: translateY(7px);
+    opacity: 0;
+    transition:  0.3s linear;
+}
+.call_back__call_me:hover::after {
+    opacity: 1;
+    transform: translateY(-8px);
 }
 .call_back__call_me:hover {
     color: #f0ae3d;
@@ -184,12 +205,11 @@ h1 {
     text-transform: uppercase;
     outline: none;
     cursor: pointer;
+    transition: background-color 1s, color 0.7s;
 }
 .form__button:hover {
-    background-color: #d89219;
+    background-color: #da941b;
     color: white;
-    text-decoration: underline;
-    transition: 0.5ms;
 }
 .form__button:active {
     background-color: #f0ae3d;
@@ -279,15 +299,9 @@ h3 {
     background-position: top;
     background-image: url(../Images/Best\ complect.jpg);
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 718px;
-}
-
-.accessories__img {
-    position: absolute;
-    width: 596px;
-    padding-top: 52px;
-    padding-left: 71px;
 }
 
 .txt__h1 {
@@ -313,15 +327,24 @@ h3 {
     justify-content: space-between;
     align-items: center;
     padding-top: 8px;
+    position: relative;
 }
 
-
-
+.accessories__img {
+    position: absolute;
+    width: 596px;
+    bottom: 0;
+    left: -90%;
+}
+.functions__wrap {
+    position: relative;
+}
 .functions {
     display: flex;
     background-position: top;
     background-image: url(../Images/Functional&style.jpg);
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 525px;
 }
@@ -329,8 +352,8 @@ h3 {
 .functions__img {
     position: absolute;
     width: 454px;
-    padding-top: 89px;
-    padding-left: 918px;
+    top: 5%;
+    left: 100%;
 }
 
 .functions__p {
@@ -347,6 +370,7 @@ h3 {
     background-position: top;
     background-image: url(../Images/Why\ we.jpg);
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 460px;
     text-align: center;
@@ -399,6 +423,8 @@ h3 {
     background-position: top;
     background-image: url(../Images/Gallery.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-attachment: fixed;
     width: 100%;
     min-height: 1240px;
     text-align: center;
@@ -421,6 +447,7 @@ h3 {
     background-position: top;
     background-image: url(../Images/Our\ clients.jpg);
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 843px;
     text-align: center;
@@ -472,6 +499,7 @@ h3 {
     background-position: top;
     background-image: url(../Images/Location.jpg);
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 823px;
     text-align: center;
@@ -497,6 +525,7 @@ h3 {
     background-position: top;
     background-image: url(../Images/Contact\ us.jpg);
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     min-height: 751px;
     text-align: center;
