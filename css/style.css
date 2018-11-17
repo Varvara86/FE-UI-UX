@@ -4,7 +4,7 @@
 
 .wrapper {
     background-position: top;
-    background-image: url(../Images/Landing.jpg);
+    /* background-image: url(../Images/Landing.jpg); */
     width: 100%;
     min-height: 7268px;
     margin: 0 auto;
@@ -95,6 +95,9 @@
 .call_back__txt {
     margin-top: -22px;
 }
+.call_back__txt:hover {
+    text-decoration: underline;
+}
 
 .call_back__call_me {
     font-size: 18px;
@@ -104,6 +107,9 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: -0.03em;
+}
+.call_back__call_me:hover {
+    color: #f0ae3d;
 }
 
 .main {
@@ -178,6 +184,17 @@ h1 {
     text-transform: uppercase;
     outline: none;
     cursor: pointer;
+}
+.form__button:hover {
+    background-color: #d89219;
+    color: white;
+    text-decoration: underline;
+    transition: 0.5ms;
+}
+.form__button:active {
+    background-color: #f0ae3d;
+    color: #bdbdbd;
+    text-decoration: underline;
 }
 
 
@@ -538,6 +555,15 @@ h3 {
     width: 35px;
     height: 35px;
 }
+.social__form:hover {
+    background-color: #bdbdbd;
+    border-radius: 25%;
+}
+
+.sosial__form:active {
+    background-color: #f0ae3d;
+}
+
 
 .social__form_a {
     color: black;
@@ -546,6 +572,9 @@ h3 {
 
 .fa-facebook-f {
     font-size: 22px;
+}
+.fa-facebook-f:hover {
+    color: white;
 }
 
 .fa-youtube {
