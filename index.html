@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
     <script src="http://yandex.st/jquery/1.9.1/jquery.js"></script>
-    <script src="./js/script.js"></script>
     <title>MERC PC</title>
 </head>
 
@@ -41,11 +41,12 @@
                     </div>
                 </div>
                 <div class="poup" style="display:none;">
-                        <div class="close"><i class="far fa-times-circle fa-2x"></i></div><br /><br /><br />
-                        <input type="text" name="#" id="name" class="form__name" required placeholder="Имя">
-                        <p><span class="tel__form">Телефон в формате 8 0ХХ ХХХ ХХ ХХ</span><input type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}" class="form__tel poop__tel" required placeholder="Телефон"></p>
-                        <div class="submit"><input class="form__button" type="submit" value="Отправить"></div>
-                    </div>
+                    <div class="close"><i class="far fa-times-circle fa-2x"></i></div><br /><br /><br />
+                    <input type="text" name="#" id="name" class="form__name" required placeholder="Имя">
+                    <p><span class="tel__form">Телефон в формате 8 0ХХ ХХХ ХХ ХХ</span><input type="tel" name="tel"
+                            pattern="2[0-9]{3}-[0-9]{3}" class="form__tel poop__tel" required placeholder="Телефон"></p>
+                    <div class="submit"><button class="button"><span>Хочу</span></button></div>
+                </div>
                 <div class="main">
                     <h1>мощные. уникальные. тихие</h1>
                     <hr class="main__hr">
@@ -59,7 +60,7 @@
                             <input type="tel" name="#" id="tel" class="form__tel" required placeholder="Телефон">
                         </div>
                         <div class="col col-2">
-                            <input type="button" class="form__button" value="хочу">
+                            <button class="button"><span>Хочу</span></button>
                         </div>
                     </div>
                 </div>
@@ -74,39 +75,45 @@
                 <h3>Выбрать компьютер</h3>
                 <div class="row">
                     <div class="col col-4">
-                        <img class="discription__img" src="./Images/optimal.jpg" alt="">
                         <div class="discription">
-                            <p class="discription__class"><span class="merc">merc</span> Optimal</p>
-                            <p class="discription__type"><span class="merc">cpu:</span> i7-7700k</p>
-                            <p class="discription__type"><span class="merc">ram:</span> 16GB</p>
-                            <p class="discription__type"><span class="merc">gpu:</span> GTX 1070 Ti</p>
-                            <p class="discription__type"><span class="merc">ssd+hdd:</span> 240GB+2TB</p>
-                            <p class="discription__price"><span class="merc__price">Цена:</span> 36 000 грн.</p>
-                            <input type="button" class="form__button discription__btn" value="купить">
+                            <img class="discription__img" src="./Images/optimal.jpg" alt="">
+                            <div class="discription__txt">
+                                <p class="discription__class"><span class="merc">merc</span> Optimal</p>
+                                <p class="discription__type"><span class="merc">cpu:</span> i7-7700k</p>
+                                <p class="discription__type"><span class="merc">ram:</span> 16GB</p>
+                                <p class="discription__type"><span class="merc">gpu:</span> GTX 1070 Ti</p>
+                                <p class="discription__type"><span class="merc">ssd+hdd:</span> 240GB+2TB</p>
+                                <p class="discription__price"><span class="merc__price">Цена:</span> 36 000 грн.</p>
+                                <button class="button discription__btn"><span>Купить</span></button>
+                            </div>
                         </div>
                     </div>
                     <div class="col col-4">
-                        <img class="discription__img" src="./Images/advance.jpg" alt="">
                         <div class="discription">
-                            <p class="discription__class"><span class="merc">merc</span> Advance</p>
-                            <p class="discription__type"><span class="merc">cpu:</span> i7-8700k</p>
-                            <p class="discription__type"><span class="merc">ram:</span> 32GB</p>
-                            <p class="discription__type"><span class="merc">gpu:</span> GTX 1080 Ti</p>
-                            <p class="discription__type"><span class="merc">ssd+hdd:</span> 512GB+8TB</p>
-                            <p class="discription__price"><span class="merc__price">Цена:</span> 56 000 грн.</p>
-                            <input type="button" class="form__button discription__btn" value="купить">
+                            <img class="discription__img" src="./Images/advance.jpg" alt="">
+                            <div class="discription__txt">
+                                <p class="discription__class"><span class="merc">merc</span> Advance</p>
+                                <p class="discription__type"><span class="merc">cpu:</span> i7-8700k</p>
+                                <p class="discription__type"><span class="merc">ram:</span> 32GB</p>
+                                <p class="discription__type"><span class="merc">gpu:</span> GTX 1080 Ti</p>
+                                <p class="discription__type"><span class="merc">ssd+hdd:</span> 512GB+8TB</p>
+                                <p class="discription__price"><span class="merc__price">Цена:</span> 56 000 грн.</p>
+                                <button class="button discription__btn"><span>Купить</span></button>
+                            </div>
                         </div>
                     </div>
                     <div class="col col-4">
-                        <img class="discription__img" src="./Images/xtreme.jpg" alt="">
                         <div class="discription">
-                            <p class="discription__class"><span class="merc">merc</span> Xtreme</p>
-                            <p class="discription__type"><span class="merc">cpu:</span> i9-9900k</p>
-                            <p class="discription__type"><span class="merc">ram:</span> 64GB</p>
-                            <p class="discription__type"><span class="merc">gpu:</span> RTX 2080 Ti</p>
-                            <p class="discription__type"><span class="merc">ssd+hdd:</span> 1TB+10TB</p>
-                            <p class="discription__price"><span class="merc__price">Цена:</span> 76 000 грн.</p>
-                            <input type="button" class="form__button discription__btn" value="купить">
+                            <img class="discription__img" src="./Images/xtreme.jpg" alt="">
+                            <div class="discription__txt">
+                                <p class="discription__class"><span class="merc">merc</span> Xtreme</p>
+                                <p class="discription__type"><span class="merc">cpu:</span> i9-9900k</p>
+                                <p class="discription__type"><span class="merc">ram:</span> 64GB</p>
+                                <p class="discription__type"><span class="merc">gpu:</span> RTX 2080 Ti</p>
+                                <p class="discription__type"><span class="merc">ssd+hdd:</span> 1TB+10TB</p>
+                                <p class="discription__price"><span class="merc__price">Цена:</span> 76 000 грн.</p>
+                                <button class="button discription__btn"><span>Купить</span></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -179,7 +186,7 @@
                         </div>
                     </div>
                     <div class="progress_comp">
-                        <div class="progress_comp__count"><input type="button" class="form__button progress__btn" value="бесплатно"></div>
+                        <div class="awesome">Беспланто</div>
                         <div class="progress_comp__txt">
                             <p>доставка<br>и страховка</p>
                         </div>
@@ -192,10 +199,38 @@
             <div class="container">
                 <h1 class="gallery__h1">галерея</h1>
                 <h3>мощные пк для геймеров и киберспортсменов</h3>
-                <div class="slider">
-                    <!-- для слайдера убрать owerflow hidden  -->
-                    <img src="./Images/Slide1.png" alt="">
-                </div>
+                <section class="vertical-center slider">
+                    <div>
+                        <img src="http://placehold.it/350x100?text=1">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/350x100?text=2">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/350x100?text=3">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/350x100?text=4">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/350x100?text=5">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/350x100?text=6">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/350x100?text=7">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/350x100?text=8">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/350x100?text=9">
+                    </div>
+                    <div>
+                        <img src="http://placehold.it/350x100?text=10">
+                    </div>
+                </section>
             </div>
         </div>
         <!-- Clients -->
@@ -276,7 +311,7 @@
                         </div>
                         <div class="col-8 offset-4">
                             <div class="last__btn">
-                                <input type="button" class="form__button last__btn--txt" value="оставить заявку">
+                                <button class="button last__btn--txt"><span>оставить заявку</span></button>
                             </div>
                         </div>
                     </div>
@@ -295,6 +330,8 @@
             </div>
         </div>
     </div>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>
