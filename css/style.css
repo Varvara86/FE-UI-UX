@@ -851,13 +851,15 @@ h3 {
 	border-radius: 5px;
 	width: 32px;
     height: 32px;
-    content:'\2713';
+    /* content:'\2713'; */
     padding-top: 8px;
     font-size: 30px;
     color: #dadada;
     text-align: center;
     line-height: 15px;
 	background-color:#db9f37;
+    background-image: url(../Images/ok.png);
+    background-size: cover;
 }
 
 .checkbox__txt {
