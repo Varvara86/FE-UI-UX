@@ -525,27 +525,18 @@ h3 {
 
 @-webkit-keyframes colorchange {
     0% {
-
         background-color: #db9f37;
     }
-
     25% {
-
         background-color: rgb(244, 248, 8);
     }
-
     50% {
-
         background-color: rgb(17, 182, 17);
     }
-
     75% {
-
         background-color: rgb(71, 71, 255);
     }
 }
-
-
 
 .gallery {
     display: flex;
@@ -566,32 +557,50 @@ h3 {
 
 
 
-
 .slider {
-    width: 50%;
-    margin: 100px auto;
+    z-index: 9;
+    width: 700px;
+    height: 290px;
+    overflow: hidden;
+    margin: 0 0 7px;
+    position: relative;
 }
-.slick-slide {
-  margin: 0px 20px;
+.slider ul,
+.slider li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
-.slick-slide img {
-  width: 100%;
+.slider ul {
+    width: 9999px; 
 }
-.slick-prev:before,
-.slick-next:before {
-  color: black;
+.slider ul li {
+    list-style-type: none;
+    float: left;
+    width: 700px;
+    height: 290px;
 }
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
+.slider .nav {
+    position: absolute;
+    left: 15px;
+    bottom: 12px; 
 }
-.slick-active {
-  opacity: .5;
+.slider .nav span {
+    opacity: 0.9;
+    background: #fff;
+    margin: 0 8px 0 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    display: block;
+    float: left;
+    box-shadow: 0 1px 2px #000;
 }
-.slick-current {
-  opacity: 1;
+.slider .nav span.on {
+    background: #2e9419;
 }
-
 
 
 
@@ -812,32 +821,63 @@ h3 {
     outline: none;
 }
 
-.checkbox {
+.check {
     display: flex;
     align-items: flex-start;
     padding-top: 6px;
     text-align: left;
 }
 
-.checkbox__size {
-    width: 32px;
-    background-color: #db9f37;
-    outline: none;
+.checkbox {
+	position:relative;
+	padding-left:55px;
+}
+.checkbox input[type=checkbox] {
+	display:none;
+}
+.checkbox label:after {
+    content:'';
+	display:block;
+	height: 32px;
+	width: 32px;
+    border: 2px solid #db9f37;
+    border-radius: 5px;
+	position:absolute;
+	top: 5px;
+    left: 1px;
+    cursor: pointer;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+	border-radius: 5px;
+	width: 32px;
+    height: 32px;
+    content:'\2713';
+    padding-top: 8px;
+    font-size: 30px;
+    color: #dadada;
+    text-align: center;
+    line-height: 15px;
+	background-color:#db9f37;
 }
 
 .checkbox__txt {
     font-size: 24px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 30px;
     color: #db9f37;
     letter-spacing: -0.05em;
     text-align: justify;
 }
 
 .confident {
+    text-decoration: none;
+    color: #db9f37;
+    transition: all 0.5s;
+}
+.confident:hover {
+    text-decoration: underline;
     color: white;
 }
-
 .last__btn {
     padding-top: 30px;
 }
