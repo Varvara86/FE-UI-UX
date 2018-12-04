@@ -150,16 +150,23 @@ body {
     color: #f0ae3d;
 }
 
-.poup {
+/* .poup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 600px;
     height: 400px;
     border: none;
     background-color: rgb(255, 255, 255, 0.6);
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: 180px;
     padding: 20px;
     cursor: pointer;
+    z-index: 9;
+}
+.poup:after {
+    
 }
 
 .poop__tel {
@@ -169,7 +176,7 @@ body {
 
 .close {
     text-align: right;
-}
+} */
 
 .tel__form {
     margin-top: 25px;
@@ -554,55 +561,6 @@ h3 {
     padding-top: 61px;
     margin-bottom: 36px;
 }
-
-
-
-.slider {
-    z-index: 9;
-    width: 700px;
-    height: 290px;
-    overflow: hidden;
-    margin: 0 0 7px;
-    position: relative;
-}
-.slider ul,
-.slider li {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-.slider ul {
-    width: 9999px; 
-}
-.slider ul li {
-    list-style-type: none;
-    float: left;
-    width: 700px;
-    height: 290px;
-}
-.slider .nav {
-    position: absolute;
-    left: 15px;
-    bottom: 12px; 
-}
-.slider .nav span {
-    opacity: 0.9;
-    background: #fff;
-    margin: 0 8px 0 0;
-    width: 16px;
-    height: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    overflow: hidden;
-    display: block;
-    float: left;
-    box-shadow: 0 1px 2px #000;
-}
-.slider .nav span.on {
-    background: #2e9419;
-}
-
-
 
 .clients {
     display: flex;

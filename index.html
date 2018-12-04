@@ -11,9 +11,13 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/remodal/remodal.css">
+    <link rel="stylesheet" href="./css/remodal/remodal-default-theme.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
-    <script type="text/javascript" src="jquery/jquery.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>MERC PC</title>
 </head>
@@ -32,20 +36,27 @@
                         <div class="call_back__contacts">
                             <p class="call_back__p"><a href="tel:8 800 555 44 33" class="call_back__contacts--nomber">8
                                     800 555 44 33</a></p>
-                            <div class="call_back__txt openwnd"><a href="javascript:void(0)" class="call_back__call_me">перезвоните
+                            <div class="call_back__txt openwnd"><a href="#modal" class="call_back__call_me">перезвоните
                                     мне</a></div>
                             <!-- <p class="call_back__txt"><a href="#name" class="call_back__call_me">перезвоните -->
                             <!-- мне</a></p> чтобы звонок переходил в форму для заполнения -->
                         </div>
                     </div>
                 </div>
-                <div class="poup" style="display:none;">
-                    <div class="close"><i class="far fa-times-circle fa-2x"></i></div><br /><br /><br />
+                <div class="remodal" data-remodal-id="modal">
+                    <button data-remodal-action="close" class="remodal-close"></button>
                     <input type="text" name="#" id="name" class="form__name" required placeholder="Имя">
                     <p><span class="tel__form">Телефон в формате 8 0ХХ ХХХ ХХ ХХ</span><input type="tel" name="tel"
                             pattern="2[0-9]{3}-[0-9]{3}" class="form__tel poop__tel" required placeholder="Телефон"></p>
                     <div class="submit"><button class="button"><span>Хочу</span></button></div>
                 </div>
+                <!-- <div class="poup" style="display:none;">
+                    <div class="close"><i class="far fa-times-circle fa-2x"></i></div><br /><br /><br />
+                    <input type="text" name="#" id="name" class="form__name" required placeholder="Имя">
+                    <p><span class="tel__form">Телефон в формате 8 0ХХ ХХХ ХХ ХХ</span><input type="tel" name="tel"
+                            pattern="2[0-9]{3}-[0-9]{3}" class="form__tel poop__tel" required placeholder="Телефон"></p>
+                    <div class="submit"><button class="button"><span>Хочу</span></button></div>
+                </div> -->
                 <div class="main">
                     <h1>мощные. уникальные. тихие</h1>
                     <hr class="main__hr">
@@ -198,13 +209,21 @@
             <div class="container">
                 <h1 class="gallery__h1">галерея</h1>
                 <h3>мощные пк для геймеров и киберспортсменов</h3>
-                <div class="slider">
-                    <ul>
-                        <li><img src="./Images/Slide1.png" alt="" /></li><br>
-                        <li><img src="./Images/pic2.jpg" alt="" /></li><br>
-                        <li><img src="./Images/pic4.jpg" alt="" /></li><br>
-                        <li><img src="./Images/pic3.jpg" alt="" /></li><br>
-                    </ul>
+                <div class="slider-wrap">
+                    <section class="slider js-slider">
+                        <div>
+                          <img src="./Images/Slide1.png">
+                        </div>
+                        <div>
+                          <img src="./Images/pic4.jpg">
+                        </div>
+                        <div>
+                          <img src="./Images/pic3.jpg">
+                        </div>
+                        <div>
+                          <img src="./Images/pic2.jpg">
+                        </div>
+                      </section>
                 </div>
             </div>
         </div>
@@ -280,9 +299,10 @@
                         </div>
                         <div class="check">
                             <div class="checkbox"><input type="checkbox" name="terms" id="check">
-                            <label for="check">
-                                <span class="checkbox__txt">Я согласен на обработку персональных данных
-                                в соответствии с <a href="http://" class="confident">политикой конфиденциальности</a></span>
+                                <label for="check">
+                                    <span class="checkbox__txt">Я согласен на обработку персональных данных
+                                        в соответствии с <a href="http://" class="confident">политикой
+                                            конфиденциальности</a></span>
                                 </label></div>
                         </div>
                         <div class="col-8 offset-4">
@@ -306,7 +326,14 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter20963398 = new Ya.Metrika({id:20963398, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/20963398" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <script type="text/javascript" src="./jquery/jquery.js"></script>
+    <!-- <noscript>
+        <div><img src="//mc.yandex.ru/watch/20963398" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript> -->
+    <script src="./js/remodal/remodal.js"></script>
+    <script src="./js/remodal/remodal.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.js"></script>
+    <script src="./js/slider.js"></script>
     <script type="text/javascript" src="./js/text/javascript.js"></script>
     <script src="./js/script.js"></script>
 </body>
